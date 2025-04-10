@@ -51,13 +51,10 @@ repositories {
 
 dependencies {
     implementation 'com.github.doublesymmetry:kotlinaudio:v2.1.0'
-    // used when building against local maven
-//    implementation "com.github.doublesymmetry:kotlin-audio:2.1.0"
-
-    //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"
-
-    // Make sure we're using androidx
+    implementation("com.facebook.react:react-native-codegen:0.71.0") {
+        because("Required for New Architecture codegen")
+    }
     implementation "androidx.core:core-ktx:1.9.0"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.1.0"
     implementation "androidx.lifecycle:lifecycle-process:2.5.1"
