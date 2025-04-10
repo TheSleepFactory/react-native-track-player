@@ -52,9 +52,6 @@ repositories {
 dependencies {
     implementation 'com.github.doublesymmetry:kotlinaudio:v2.1.0'
     implementation "com.facebook.react:react-native:+"
-    implementation("com.facebook.react:react-native-codegen:0.77.2") {
-    because("Codegen version must match RN version")
-}
     implementation "androidx.core:core-ktx:1.9.0"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.1.0"
     implementation "androidx.lifecycle:lifecycle-process:2.5.1"
